@@ -1,6 +1,6 @@
 <template>
     <div class="container" :class="{ 'open': openList }">
-        <button @click="handleSort">
+        <button @click="handleSort" v-if="itemList.length > 0">
             <span v-if="isMix">Сортировать</span>
             <span v-else>Перемешать</span>
         </button>
